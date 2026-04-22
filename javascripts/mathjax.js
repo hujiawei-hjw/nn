@@ -2,15 +2,11 @@ window.MathJax = {
   tex: {
     inlineMath: [["\\(", "\\)"]],
     displayMath: [["\\[", "\\]"]],
-    processEscapes: true,
-    processEnvironments: true
+    processEscapes: true
   },
-  options:
+  options: {
     ignoreHtmlClass: ".*|",
     processHtmlClass: "arithmatex"
   }
 };
-
-document$.subscribe(() => { 
-  MathJax.typesetPromise()
-})
+document$.subscribe(() => { MathJax.typesetPromise() })
