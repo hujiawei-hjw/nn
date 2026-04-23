@@ -175,9 +175,17 @@ l_y = -(x_g - x_v)\sin\theta + (y_g - y_v)\cos\theta
 \delta = \arctan\left( \frac{2L \cdot \sin\alpha}{L_d} \right)
 </script>
 </p>
-<p>其中：
-- <script type="math/tex"> L </script> 为车辆轴距（前后轴中心的距离，本项目中Tesla Model 3取 <script type="math/tex"> L=2.5\ \text{m} </script>）
-- <script type="math/tex"> L_d </script> 为预瞄距离（车辆到预瞄点的距离，本项目取 <script type="math/tex"> L_d=8.0\ \text{m} </script>）</p>
+<p>其中：</p>
+<ul>
+<li>
+<p>
+<script type="math/tex"> L </script> 为车辆轴距（前后轴中心的距离，本项目中Tesla Model 3取 <script type="math/tex"> L=2.5\ \text{m} </script>）</p>
+</li>
+<li>
+<p>
+<script type="math/tex"> L_d </script> 为预瞄距离（车辆到预瞄点的距离，本项目取 <script type="math/tex"> L_d=8.0\ \text{m} </script>）</p>
+</li>
+</ul>
 <h4 id="4">4. 转向角限幅处理</h4>
 <p>为保证车辆行驶稳定性，避免转向幅度过大导致失控，将计算得到的转向角限幅在车辆可控范围内：</p>
 <p>
